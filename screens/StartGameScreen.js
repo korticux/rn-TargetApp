@@ -6,7 +6,7 @@ import { useState} from 'react';
 function StartGameScreen(onPickNumber) {
     const [enteredNumber, setEnteredNumber] = useState('');
 
-    function numberinputHandler (enteredText) {
+    function numberInputHandler (enteredText) {
         setEnteredNumber(enteredText);
     }
 
@@ -37,7 +37,7 @@ function StartGameScreen(onPickNumber) {
             autoCapitalize="none"
             autoCorrect={false}
             value={enteredNumber}
-            onChangeText={numberinputHandler}
+            onChangeText={numberInputHandler}
         />
         <View style={styles.buttonsContainer}>
            <View style={styles.buttonContainer}> 

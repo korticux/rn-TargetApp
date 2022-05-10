@@ -10,13 +10,14 @@ export default function App() {
 
   function pickedNumberHandler(pickedNumber){
     setUserNumber(pickedNumber);
+  }
 
     let screen = <StartGameScreen onPickNumber={pickedNumberHandler}/>;
 
     if (userNumber) {
-      screen = <GameScreen/>
+      screen = <GameScreen/>;
     }
-  }
+
   return (
     <LinearGradient colors={['#4e0329', '#ddb52f']} style={styles.rootScreen}>
       <ImageBackground
