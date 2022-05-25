@@ -3,7 +3,7 @@ import { Text, StyleSheet} from 'react-native';
 import Colors from '../../constants/colors';
 
 function Title({children}){
-    return <Text style={styles.title}>Opponent's Guess</Text>
+    return <Text style={styles.title}>Guess My Number</Text>
 }
 
 const styles = StyleSheet.create({
