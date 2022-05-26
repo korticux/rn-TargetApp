@@ -1,20 +1,25 @@
 import { Text, StyleSheet} from 'react-native';
 
-import Colors from '../../constants/colors';
+
 
 function Title({children}){
-    return <Text style={styles.title}>Guess My Number</Text>
+    return <Text style={styles.title}>{children}</Text>
 }
 
 const styles = StyleSheet.create({
     title: {
-        fontSize: 18,
-        fontWeight: 'bold',
-        color: Colors.accent500,
+        alignItems: 'center',
+        fontFamily: 'open-sans-bold',
+        fontSize: 25,
+        color: 'white',
         textAlign: 'center',
-        borderColor: Colors.accent500,
-        borderWidth: 4,
-        padding: 12
+        borderColor: 'white',
+        borderWidth: 2,
+        padding: 12,
+        marginTop: 120,
+        maxWidth: '80%',
+        width: 300,
+        marginLeft: 50,
     }
 })
 
